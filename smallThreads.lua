@@ -33,7 +33,7 @@ local RightClick = false
 CreateThread(function()
     while true do
         DisableControlAction(0, 140, true)
-		DisableControlAction(0, 263, true)
+	DisableControlAction(0, 263, true)
     if RightClick == false then
         DisableControlAction(0,24,true)
     end
