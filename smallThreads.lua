@@ -72,3 +72,17 @@ RegisterNetEvent('RemoveStuckProps', function()
         end
     end
 end)
+
+-- Lower Damage Dealt
+CreateThread(function()
+    --SetWeaponDamageModifierThisFrame(GetHashKey("WEAPON_"), 1.0) -- Weapon name | Damage multiplier
+    SetWeaponDamageModifierThisFrame(GetHashKey("WEAPON_UNARMED"), 0.3)
+    SetWeaponDamageModifierThisFrame(GetHashKey("WEAPON_NIGHTSTICK"), 0.5) 
+    --SetWeaponDamageModifierThisFrame(GetHashKey("WEAPON_APPISTOL"), 0.2)
+    --SetWeaponDamageModifierThisFrame(GetHashKey("WEAPON_CARBINERIFLE"), 0.35)
+    --SetWeaponDamageModifierThisFrame(GetHashKey("WEAPON_SMG"), 0.25)
+    --SetWeaponDamageModifierThisFrame(GetHashKey("WEAPON_PUMPSHOTGUN"), 0.4)
+    --SetWeaponDamageModifierThisFrame(GetHashKey("WEAPON_ASSAULTRIFLE"), 0.30)
+    --SetWeaponDamageModifierThisFrame(GetHashKey("WEAPON_PISTOL"), 0.5)
+    --SetWeaponDamageModifierThisFrame(GetHashKey("WEAPON_MICROSMG"), 0.25)
+end)
